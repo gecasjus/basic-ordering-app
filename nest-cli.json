@@ -1,0 +1,62 @@
+{
+  "monorepo": true,
+  "projects": {
+    "order": {
+      "type": "library",
+      "root": "domains/order",
+      "entryFile": "index",
+      "sourceRoot": "libs/domains/order/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/domains/tsconfig.lib.json"
+      }
+    },
+    "config": {
+      "type": "library",
+      "root": "libs/config",
+      "entryFile": "index",
+      "sourceRoot": "libs/config/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/config/tsconfig.lib.json"
+      }
+    },
+    "typeorm": {
+      "type": "library",
+      "root": "libs/typeorm",
+      "entryFile": "index",
+      "sourceRoot": "libs/typeorm/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/typeorm/tsconfig.lib.json"
+      }
+    },
+    "order-publisher": {
+      "type": "application",
+      "root": "apps/order-publisher",
+      "entryFile": "main",
+      "sourceRoot": "apps/order-publisher/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/order-publisher/tsconfig.app.json"
+      }
+    },
+    "memcached": {
+      "type": "library",
+      "root": "libs/memcached",
+      "entryFile": "index",
+      "sourceRoot": "libs/memcached/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/memcached/tsconfig.lib.json"
+      }
+    },
+    "grafana": {
+      "type": "library",
+      "root": "libs/grafana",
+      "entryFile": "index",
+      "sourceRoot": "libs/grafana/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/grafana/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}
