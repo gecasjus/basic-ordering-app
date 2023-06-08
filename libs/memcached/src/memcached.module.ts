@@ -1,8 +1,9 @@
-import { Module } from '@nestjs/common';
-import { MemcachedService } from './memcached.service';
+import { ConfigModule } from "@app/config";
+import { MemcachedService } from "@app/memcached/memcached.service";
+import { Module } from "@nestjs/common";
 
 @Module({
-  providers: [MemcachedService],
-  exports: [MemcachedService],
+  imports: [ConfigModule],
+  providers: [MemcachedService]
 })
-export class MemcachedModule {}
+export class MemcachedModule { }

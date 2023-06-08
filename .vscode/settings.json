@@ -1,7 +1,11 @@
 {
-    "editor.formatOnSave": true,
+    "eslint.enable": true,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ]
 }

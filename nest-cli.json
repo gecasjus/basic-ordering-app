@@ -1,11 +1,11 @@
 {
   "monorepo": true,
   "projects": {
-    "order": {
+    "order-unit": {
       "type": "library",
-      "root": "domains/order",
+      "root": "domains/order-unit",
       "entryFile": "index",
-      "sourceRoot": "libs/domains/order/src",
+      "sourceRoot": "libs/domains/order-unit/src",
       "compilerOptions": {
         "tsConfigPath": "libs/domains/tsconfig.lib.json"
       }
@@ -28,15 +28,6 @@
         "tsConfigPath": "libs/typeorm/tsconfig.lib.json"
       }
     },
-    "order-publisher": {
-      "type": "application",
-      "root": "apps/order-publisher",
-      "entryFile": "main",
-      "sourceRoot": "apps/order-publisher/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/order-publisher/tsconfig.app.json"
-      }
-    },
     "memcached": {
       "type": "library",
       "root": "libs/memcached",
@@ -53,6 +44,33 @@
       "sourceRoot": "libs/grafana/src",
       "compilerOptions": {
         "tsConfigPath": "libs/grafana/tsconfig.lib.json"
+      }
+    },
+    "order-processing-scheduler": {
+      "type": "application",
+      "root": "apps/order-processing-scheduler",
+      "entryFile": "main",
+      "sourceRoot": "apps/order-processing-scheduler/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/order-processing-scheduler/tsconfig.app.json"
+      }
+    },
+    "api-gateway": {
+      "type": "application",
+      "root": "apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+      }
+    },
+    "serializer": {
+      "type": "library",
+      "root": "libs/serializer",
+      "entryFile": "index",
+      "sourceRoot": "libs/serializer/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/serializer/tsconfig.lib.json"
       }
     }
   },

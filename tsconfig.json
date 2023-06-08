@@ -16,6 +16,7 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,
     "paths": {
       "@app/domains": [
         "libs/domains/src"
@@ -46,6 +47,12 @@
       ],
       "@app/grafana/*": [
         "libs/grafana/src/*"
+      ],
+      "@app/serializer": [
+        "libs/serializer/src"
+      ],
+      "@app/serializer/*": [
+        "libs/serializer/src/*"
       ]
     }
   }
