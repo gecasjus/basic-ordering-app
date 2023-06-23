@@ -1,10 +1,10 @@
-import { CacheConfigService } from '@app/config/services/cache-config.service';
-import { DatabaseConfigService } from '@app/config/services/database-config.service';
-import { NodeConfigService } from '@app/config/services/node-config.service';
 import { Module } from '@nestjs/common';
+import { DatabaseConfigService } from './services/database-config.service';
+import { NodeConfigService } from './services/node-config.service';
+import { RedisConfigService } from './services/redis-config.service';
 
 @Module({
-  providers: [NodeConfigService, DatabaseConfigService, CacheConfigService],
-  exports: [NodeConfigService, DatabaseConfigService, CacheConfigService],
+  providers: [NodeConfigService, DatabaseConfigService, RedisConfigService],
+  exports: [NodeConfigService, DatabaseConfigService, RedisConfigService],
 })
 export class ConfigModule { }

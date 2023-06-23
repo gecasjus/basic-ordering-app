@@ -2,13 +2,13 @@ import { Injectable } from "@nestjs/common";
 import { z } from "zod";
 import { ConfigService } from "./config.service";
 
-const NodeSchema = z.object({
-    NODE_ENV: z.string(),
+const RedisSchema = z.object({
+    REDIS_URL: z.string(),
 });
 
 @Injectable()
-export class NodeConfigService extends ConfigService<typeof NodeSchema> {
+export class RedisConfigService extends ConfigService<typeof RedisSchema> {
     constructor() {
-        super(NodeSchema)
+        super(RedisSchema)
     }
 }

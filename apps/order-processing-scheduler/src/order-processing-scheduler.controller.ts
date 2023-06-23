@@ -3,10 +3,10 @@ import { OrderProcessingSchedulerService } from './order-processing-scheduler.se
 
 @Controller()
 export class OrderProcessingSchedulerController {
-  constructor(private readonly orderProcessingSchedulerService: OrderProcessingSchedulerService) {}
+  constructor(private readonly orderProcessingSchedulerService: OrderProcessingSchedulerService) { }
 
   @Get()
   getHello(): string {
-    return this.orderProcessingSchedulerService.getHello();
+    return ''
   }
 }

@@ -28,13 +28,13 @@
         "tsConfigPath": "libs/typeorm/tsconfig.lib.json"
       }
     },
-    "memcached": {
+    "cache": {
       "type": "library",
-      "root": "libs/memcached",
+      "root": "libs/cache",
       "entryFile": "index",
-      "sourceRoot": "libs/memcached/src",
+      "sourceRoot": "libs/cache/src",
       "compilerOptions": {
-        "tsConfigPath": "libs/memcached/tsconfig.lib.json"
+        "tsConfigPath": "libs/cache/tsconfig.lib.json"
       }
     },
     "grafana": {
@@ -71,6 +71,15 @@
       "sourceRoot": "libs/serializer/src",
       "compilerOptions": {
         "tsConfigPath": "libs/serializer/tsconfig.lib.json"
+      }
+    },
+    "types": {
+      "type": "library",
+      "root": "libs/types",
+      "entryFile": "index",
+      "sourceRoot": "libs/types/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/types/tsconfig.lib.json"
       }
     }
   },

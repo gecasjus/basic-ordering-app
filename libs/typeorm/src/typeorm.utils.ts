@@ -1,6 +1,6 @@
 import { PrimaryGeneratedColumn, Column, CreateDateColumn } from 'typeorm';
 
-class BaseEntity {
+export class BaseEntity {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
@@ -9,11 +9,4 @@ class BaseEntity {
 
     @Column({ type: 'varchar', length: 300 })
     createdBy: string;
-
-    @Column({ type: 'varchar', length: 300, nullable: true })
-    comment: string | null;
 }
-
-
-
-export { BaseEntity }

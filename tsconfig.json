@@ -18,41 +18,29 @@
     "noFallthroughCasesInSwitch": false,
     "esModuleInterop": true,
     "paths": {
-      "@app/domains": [
-        "libs/domains/src"
-      ],
-      "@app/domains/*": [
-        "libs/domains/src/*"
+      "@app/domains/order-unit": [
+        "domains/order-unit/src"
       ],
       "@app/config": [
         "libs/config/src"
       ],
-      "@app/config/*": [
-        "libs/config/src/*"
-      ],
       "@app/typeorm": [
         "libs/typeorm/src"
       ],
-      "@app/typeorm/*": [
-        "libs/typeorm/src/*"
-      ],
-      "@app/memcached": [
-        "libs/memcached/src"
-      ],
-      "@app/memcached/*": [
-        "libs/memcached/src/*"
+      "@app/cache": [
+        "libs/cache/src"
       ],
       "@app/grafana": [
         "libs/grafana/src"
       ],
-      "@app/grafana/*": [
-        "libs/grafana/src/*"
-      ],
       "@app/serializer": [
         "libs/serializer/src"
       ],
-      "@app/serializer/*": [
-        "libs/serializer/src/*"
+      "@app/types": [
+        "libs/types/src"
+      ],
+      "@app/types/*": [
+        "libs/types/src/*"
       ]
     }
   }
